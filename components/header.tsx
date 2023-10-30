@@ -57,7 +57,7 @@ function Header(): JSX.Element {
 
       <div
         className={`fixed top-0 right-0 h-full w-[250px] text-white bg-[#212020] z-50 transform ${
-          isMobileMenuOpen ? "translate-x-full" : ""
+          !isMobileMenuOpen ? "translate-x-full" : ""
         } transition-transform ease-in-out duration-300`}
       >
         <div className="flex flex-col items-end p-4 space-y-4 px-10 pt-8">
